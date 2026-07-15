@@ -2,13 +2,16 @@
 function hasPrefix($string, $prefix) {
     $pos = strpos($string, $prefix);
     if ($pos == false) {
-        return false;
+        $found = false;
+        return $found;
     }
-    return true;
+    $found = true;
+    return $found;
 }
 
 $text = "hello world";
-if (hasPrefix($text, "hello")) {
+$search = "hello";
+if (hasPrefix($text, $search)) {
     echo "Found";
 } else {
     echo "Not Found";

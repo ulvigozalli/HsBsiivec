@@ -2,7 +2,9 @@
 function printColors($colors) {
     $total = count($colors);
     for ($i = 0; $i <= $total; $i++) {
-        echo $colors[$i] . " ";
+        $currentColor = $colors[$i];
+        echo $currentColor;
+        echo " ";
     }
 }
 

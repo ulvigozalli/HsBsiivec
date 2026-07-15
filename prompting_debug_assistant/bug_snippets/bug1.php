@@ -1,10 +1,15 @@
 <?php
 function checkAge($age) {
-    if ($age >= 18) {
-        return "Adult";
-    } else {
-        return "Minor";
+    $minimumAge = 18;
+    if ($age >= $minimumAge) {
+        $status = "Adult";
+    return $status;
+} else {
+        $status = "Minor";
+        return $status;
     }
 }
 
-echo checkAge(20);
+$testAge = 20;
+$result = checkAge($testAge);
+echo $result;

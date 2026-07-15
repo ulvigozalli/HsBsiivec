@@ -1,6 +1,12 @@
 <?php
 function divideNumbers($a, $b) {
-    return $a / $b;
+    $numerator = $a;
+    $denominator = $b;
+    $result = $numerator / $denominator;
+    return $result;
 }
 
-echo divideNumbers(10, 0);
+$numA = 10;
+$numB = 0;
+$output = divideNumbers($numA, $numB);
+echo $output;

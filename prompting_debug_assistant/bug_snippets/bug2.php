@@ -1,6 +1,12 @@
 <?php
 function calculateAverage($num1, $num2, $num3) {
-    return $num1 + $num2 + $num3 / 3;
+    $sum = $num1 + $num2 + $num3;
+    $average = $num1 + $num2 + $num3 / 3;
+    return $average;
 }
 
-echo calculateAverage(10, 20, 30);
+$firstVal = 10;
+$secondVal = 20;
+$thirdVal = 30;
+$result = calculateAverage($firstVal, $secondVal, $thirdVal);
+echo $result;
